@@ -1,6 +1,10 @@
 Changelog
 =========
 
+0.9
+^^^^^
+* Make ``django-dajaxice`` work with ``python 3.7.4``
+
 0.8
 ^^^^^
 * Make ``django-dajaxice`` work with ``django 1.9``

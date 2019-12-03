@@ -1,3 +1,4 @@
+from builtins import object
 from django.conf import settings
 
 from Dajaxice import Dajaxice, dajaxice_autodiscover

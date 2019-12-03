@@ -1,6 +1,11 @@
 Changelog
 =========
 
+0.8
+^^^^^
+* Make ``django-dajaxice`` work with ``django 1.9``
+* Accepted PR #157 from markuz:master (make django-dajaxice play nice with Django 1.9)
+
 0.7
 ^^^^^
 * Make ``django-dajaxice`` work with ``django 1.7``

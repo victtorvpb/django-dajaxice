@@ -1,11 +1,12 @@
 try:
-    from django.conf.urls import url
+    from django.urls import re_path
 except ImportError:
-    from django.conf.urls.defaults import url
+    from django.conf.urls.defaults import url as re_path
+
 
 from .views import DajaxiceRequest
 
 urlpatterns = [
-    url(r'^(.+)/$', DajaxiceRequest.as_view(), name='dajaxice-call-endpoint'),
-    url(r'', DajaxiceRequest.as_view(), name='dajaxice-endpoint'),
+    re_path(r'^(.+)/$', DajaxiceRequest.as_view(), name='dajaxice-call-endpoint'),
+    re_path(r'', DajaxiceRequest.as_view(), name='dajaxice-endpoint')
 ]

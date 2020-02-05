@@ -1,7 +1,7 @@
 from builtins import object
 from django.conf import settings
 
-from Dajaxice import Dajaxice, dajaxice_autodiscover
+from dajaxice.core.Dajaxice import Dajaxice, dajaxice_autodiscover
 
 
 class DajaxiceConfig(object):

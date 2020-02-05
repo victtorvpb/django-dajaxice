@@ -12,7 +12,7 @@ def hello(request):
 @dajaxice_register(method='GET')
 @dajaxice_register(method='POST', name="more.complex.bye")
 def bye(request):
-    raise Exception("PUMMMM")
+    # raise Exception("PUMMMM")
     return json.dumps({'message': 'bye'})
 
 

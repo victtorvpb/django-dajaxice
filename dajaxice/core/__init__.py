@@ -1,6 +1,11 @@
+import sys
+from builtins import object
 from django.conf import settings
 
-from Dajaxice import Dajaxice, dajaxice_autodiscover
+if sys.version_info.major >= 3:
+    from .Dajaxice import Dajaxice, dajaxice_autodiscover
+else:
+    from Dajaxice import Dajaxice, dajaxice_autodiscover
 
 
 class DajaxiceConfig(object):
